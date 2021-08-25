@@ -1,0 +1,278 @@
+:root {
+  /* Global CSS variables */
+  /* COLORS */
+  --clr-primary-header: #222c2a;
+  --clr-primary-body: #f2f2f2;
+  --clr-secondary-body: #ccc;
+  --clr-secondary-body-400: #2196F3;
+
+  --clr-text: white;
+
+  --clr-button: #04AA6D;
+
+  /* Hover effects */
+  --clr-title-hover: #222c2a;
+  --clr-button-hover: #45a049;
+  --clr-link-hover-light-bg: #480ca8;
+  --clr-link-hover-dark-bg: #2196F3;  /* dark background
+
+  --clr-errors: red;
+
+  /* FONTS */
+  --ff-primary: Arial, Helvetica, sans-serif;
+}
+
+* {
+  /* sets how the total width and height of an element is calculated */
+  box-sizing: border-box;
+}
+
+html,
+body {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* --------------------- */
+/* GLOBAL HTML SELECTORS */
+/* --------------------- */
+
+fieldset {
+  border: none;
+}
+
+/* ---------------------------- */
+/* END OF GLOBAL HTML SELECTORS */
+/* ---------------------------- */
+
+/* ------------------- */
+/*    GENERAL PAGES    */
+/* ------------------- */
+
+
+/* ------------------ */
+/*    END OF PAGES    */
+/* ------------------ */
+
+/* ----------- */
+/*    NAVBAR   */
+/* ----------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-primary-header);
+  color: var(--clr-primary-body);
+  /* height: 8rem; */
+}
+
+.navbar-brand {
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.brand-title {
+  font-size: 2rem;
+  margin: 0 .5rem;
+}
+
+.brand-slogan {
+  font-size: 1rem;
+  margin: 0.5rem .5rem;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0;
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover{
+  color: var(--clr-link-hover-dark-bg);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 2.2rem;
+}
+
+.toggle-button .bar {
+  height: .3rem;
+  width: 100%;
+  background-color: var(--clr-primary-body);
+  border-radius: 10px;
+}
+
+@media (max-width: 540px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-brand {
+    width: 75%;
+  }
+  
+  .brand-title {
+    font-size: 1.75rem;
+    /* margin: 0 .5rem; */
+  }
+  
+  .brand-slogan {
+    font-size: .85rem;
+    /* margin: 0 .5rem; */
+  }
+  
+}
+
+/* ------------------ */
+/*    END OF NAVBAR   */
+/* ------------------ */
+
+/* ------------ */
+/*    FORMS     */
+/* ------------ */
+
+.container {
+  width: 30%;
+  margin: 1rem auto;
+  border-radius: 0.25rem;
+  background-color: var(--clr-primary-body);
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: 1rem;
+}
+
+.col-60 {
+  vertical-align: top;
+  text-align: left;
+  width: 60%;
+  margin-top: .25rem;
+  display: inline-block;
+  padding-top: 0.75rem;
+}
+
+.col-40 {
+  /* float: left; */
+  text-align: left;
+  width: 39%;
+  margin-top: .25rem;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+}
+
+.div-btn-calc {
+  margin: 0.5rem auto;
+  width: 95%;
+  border-top: 1px solid #999;
+  padding: 1rem 0;
+}
+
+/* ------------ */
+/*    FORMS     */
+/* ------------ */
+
+
+/* ------------------------- */
+/* PERSONALISED RADIO-BUTTON */
+/* ------------------------- */
+
+.label-radio {
+  margin-top: 1.75rem;
+}
+
+.radio-container {
+  margin-left: 0.75rem;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+}
+
+.radio-container input {
+  /* Hide the browser's default radio button */
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create custom radio-button */
+
+.checkmark {
+  position: absolute;
+  top: .75rem;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: var(--clr-text);
+  border: 1px solid var(--clr-secondary-body);
+}
+
+/* On mouse-over, add a grey background color */
+
+.radio-container:hover input~.checkmark {
+  background-color: var(--clr-secondary-body);
+}
+
+/* When the radio button is checked, add a blue background */
+
+.radio-container input:checked~.checkmark {
+  background-color: var(--clr-secondary-body-400);
+}
+
+/* -------------------------------- */
+/* END OF PERSONALISED RADIO-BUTTON */
+/* -------------------------------- */
