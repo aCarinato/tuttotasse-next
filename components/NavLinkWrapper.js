@@ -5,21 +5,12 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles({
   navlink: {
     padding: '0 1rem',
-    color: ({ currentURLpath, pageURL }) => {
-      if (currentURLpath === pageURL) {
-        return '#2196F3';
-      }
-      return '#f2f2f2';
-    },
+    color: '#f2f2f2',
   },
 });
 
-const NavLinkWrapper = ({ id, pageURL, menuTitle, currentURLpath }) => {
-  //   const showPageURL = (pageURL) => {
-  //     console.log('the current page url is: ' + pageURL);
-  //   };
-
-  const classes = useStyles({ currentURLpath, pageURL });
+const NavLinkWrapper = ({ id, pageURL, menuTitle }) => {
+  const classes = useStyles();
   const key = { id };
   return (
     <>

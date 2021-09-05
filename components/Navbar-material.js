@@ -21,8 +21,8 @@ const NavbarMaterial = () => {
   const [anchorEl, setAnchorEl] = useState(null);
 
   const open = Boolean(anchorEl);
-  const currentPath = router.pathname;
-  const [currentURLpath, setCurrentURLpath] = useState(currentPath);
+  //   const currentPath = router.pathname;
+  //   const [currentURLpath, setCurrentURLpath] = useState(currentPath);
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('xs'));
@@ -110,11 +110,9 @@ const NavbarMaterial = () => {
                 const { menuTitle, pageURL } = menuItem;
                 return (
                   <NavLinkWrapper
-                    onClick={() => setCurrentURLpath(pageURL)}
                     key={index}
                     pageURL={pageURL}
                     menuTitle={menuTitle}
-                    currentURLpath={currentURLpath}
                   />
                   //   <NextLink href={pageURL} passHref>
                   //     <Link>

@@ -22,22 +22,6 @@ const useStyles = makeStyles({
     // alignItems: 'stretch',
     // alignContent: 'center',
   },
-  //   navlink: {
-  //     padding: '0 1rem',
-  //     // display: 'flex',
-  //     // height: `${appbarHeight}px`,
-  //     // height: '100%',
-  //     color: (menuTitle) => {
-  //       if (menuTitle === 'Guide') {
-  //         return 'yellow';
-  //       }
-  //       return '#f2f2f2';
-  //     },
-  //     // '& hover': {
-  //     // color: '#2196F3',
-  //     //   backgroundColor: '#2196F3',
-  //     // },
-  //   },
   linkContainer: {
     // textAlign: 'center',
   },
