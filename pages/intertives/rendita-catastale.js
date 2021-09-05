@@ -7,6 +7,7 @@ import ConclusionD1 from '../../components/intertives/rendita-catastale/Conclusi
 import ConclusionD2 from '../../components/intertives/rendita-catastale/ConclusionD2';
 import ConclusionD3 from '../../components/intertives/rendita-catastale/ConclusionD3';
 import RadioItems from '../../components/intertives/RadioItems';
+import Head from 'next/head';
 // import { useEffect } from "react";
 
 const RenditaCatastale = () => {
@@ -43,78 +44,87 @@ const RenditaCatastale = () => {
   // setInitialSelections()
 
   return (
-    <section>
-      <div className="container-paragraph">
-        <h2 id="intertive">
-          <a className="link-h2" href="#intertive">
-            Guida interattiva per conoscere la rendita catastale
-          </a>
-        </h2>
-        <RadioItems
-          onChange={handleSelectionA}
-          labelRadio="Proprietá immobile"
-          options={['Immobile di Proprietá', 'Immobile Non di Proprietá']}
+    <>
+      <Head>
+        <title>Rendita Catastale</title>
+        <meta
+          name="description"
+          content="Guida Interattiva Rendita Catastale"
         />
-
-        {selectionA === 'Immobile di Proprietá' && (
+      </Head>
+      <section>
+        <div className="container-paragraph">
+          <h2 id="intertive">
+            <a className="link-h2" href="#intertive">
+              Guida interattiva per conoscere la rendita catastale
+            </a>
+          </h2>
           <RadioItems
-            onChange={handleSelectionB}
-            labelRadio="Accesso Entratel - Fisconline (SPID/CIE/CNS/Credenziali)?:"
-            options={['Si', 'No']}
+            onChange={handleSelectionA}
+            labelRadio="Proprietá immobile"
+            options={['Immobile di Proprietá', 'Immobile Non di Proprietá']}
           />
-        )}
 
-        {selectionA === 'Immobile Non di Proprietá' && (
-          <RadioItems
-            onChange={handleSelectionB}
-            labelRadio="Informazioni sull'immobile di cui é a disposizione:"
-            options={[
-              'Proprietario (nome, cognome, data e luogo di nascita o codice fiscale)',
-              'Indirizzo',
-              'Identificativi catastali (foglio, particella, subalterno)',
-            ]}
-          />
-        )}
+          {selectionA === 'Immobile di Proprietá' && (
+            <RadioItems
+              onChange={handleSelectionB}
+              labelRadio="Accesso Entratel - Fisconline (SPID/CIE/CNS/Credenziali)?:"
+              options={['Si', 'No']}
+            />
+          )}
 
-        {selectionB === 'Si' && <ConclusionC1 />}
+          {selectionA === 'Immobile Non di Proprietá' && (
+            <RadioItems
+              onChange={handleSelectionB}
+              labelRadio="Informazioni sull'immobile di cui é a disposizione:"
+              options={[
+                'Proprietario (nome, cognome, data e luogo di nascita o codice fiscale)',
+                'Indirizzo',
+                'Identificativi catastali (foglio, particella, subalterno)',
+              ]}
+            />
+          )}
 
-        {selectionB === 'No' && (
-          <RadioItems
-            onChange={handleSelectionC}
-            labelRadio="Informazioni sull'immobile di cui é a disposizione:"
-            options={[
-              'Proprietario (nome, cognome, data e luogo di nascita o codice fiscale)',
-              'Indirizzo',
-              'Identificativi catastali (foglio, particella, subalterno)',
-            ]}
-          />
-        )}
+          {selectionB === 'Si' && <ConclusionC1 />}
 
-        {selectionB ===
-          'Proprietario (nome, cognome, data e luogo di nascita o codice fiscale)' && (
-          <ConclusionC2 />
-        )}
+          {selectionB === 'No' && (
+            <RadioItems
+              onChange={handleSelectionC}
+              labelRadio="Informazioni sull'immobile di cui é a disposizione:"
+              options={[
+                'Proprietario (nome, cognome, data e luogo di nascita o codice fiscale)',
+                'Indirizzo',
+                'Identificativi catastali (foglio, particella, subalterno)',
+              ]}
+            />
+          )}
 
-        {selectionB === 'Indirizzo' && <ConclusionC3 />}
+          {selectionB ===
+            'Proprietario (nome, cognome, data e luogo di nascita o codice fiscale)' && (
+            <ConclusionC2 />
+          )}
 
-        {selectionB ===
-          'Identificativi catastali (foglio, particella, subalterno)' && (
-          <ConclusionC4 />
-        )}
+          {selectionB === 'Indirizzo' && <ConclusionC3 />}
 
-        {selectionC ===
-          'Proprietario (nome, cognome, data e luogo di nascita o codice fiscale)' && (
-          <ConclusionD1 />
-        )}
+          {selectionB ===
+            'Identificativi catastali (foglio, particella, subalterno)' && (
+            <ConclusionC4 />
+          )}
 
-        {selectionC === 'Indirizzo' && <ConclusionD2 />}
+          {selectionC ===
+            'Proprietario (nome, cognome, data e luogo di nascita o codice fiscale)' && (
+            <ConclusionD1 />
+          )}
 
-        {selectionC ===
-          'Identificativi catastali (foglio, particella, subalterno)' && (
-          <ConclusionD3 />
-        )}
-      </div>
-    </section>
+          {selectionC === 'Indirizzo' && <ConclusionD2 />}
+
+          {selectionC ===
+            'Identificativi catastali (foglio, particella, subalterno)' && (
+            <ConclusionD3 />
+          )}
+        </div>
+      </section>
+    </>
   );
 };
 
