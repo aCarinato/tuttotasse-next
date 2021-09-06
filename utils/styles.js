@@ -1,18 +1,17 @@
 import { makeStyles } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   // NavbarMaterial
-  navbar: {
-    background: '#222c2a',
-  },
   root: {
     // flexGrow: 1,
   },
   brand: {
     // brand logo container
-    fontSize: '1.5rem',
+    fontSize: '1rem',
+    [theme.breakpoints.up('md')]: {
+      fontSize: '2rem',
+    },
     fontWeight: 'bold',
-    color: '#f2f2f2',
   },
   grow: {
     flexGrow: 1,
@@ -28,8 +27,8 @@ const useStyles = makeStyles({
   //   MAIN
   main: {
     minHeight: '80vh',
-    background: '#f2f2f2',
+    // background: '#f2f2f2',
   },
-});
+}));
 
 export default useStyles;

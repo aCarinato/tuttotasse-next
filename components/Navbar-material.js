@@ -60,11 +60,13 @@ const NavbarMaterial = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" className={classes.navbar}>
+      <AppBar position="static">
         <Toolbar>
           <NextLink href="/" passHref>
             <Link>
-              <Typography className={classes.brand}>Tutto Tasse</Typography>
+              <Typography className={classes.brand} color="secondary">
+                Tutto Tasse
+              </Typography>
             </Link>
           </NextLink>
           <div className={classes.grow}></div>
