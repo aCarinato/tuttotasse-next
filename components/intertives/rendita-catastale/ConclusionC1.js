@@ -4,7 +4,7 @@ const ConclusionC1 = () => {
       <p>
         Il valore della rendita catastale di un
         <span>immobile di proprietá</span> si puó ricavare gratuitamente dal
-        sito dell'Agenzia delle Entrate presso il seguente link:
+        sito dell Agenzia delle Entrate presso il seguente link:
       </p>
       <a
         href="https://telematici.agenziaentrate.gov.it/Main/index.jsp"
