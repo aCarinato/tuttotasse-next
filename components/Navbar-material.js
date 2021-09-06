@@ -21,8 +21,8 @@ const NavbarMaterial = () => {
   const [anchorEl, setAnchorEl] = useState(null);
 
   const open = Boolean(anchorEl);
-  const currentPath = router.pathname;
-  const [currentURLpath, setCurrentURLpath] = useState(currentPath);
+  //   const currentPath = router.pathname;
+  //   const [currentURLpath, setCurrentURLpath] = useState(currentPath);
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('xs'));
@@ -60,11 +60,13 @@ const NavbarMaterial = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" className={classes.navbar}>
+      <AppBar position="static">
         <Toolbar>
           <NextLink href="/" passHref>
             <Link>
-              <Typography className={classes.brand}>Tutto Tasse</Typography>
+              <Typography className={classes.brand} color="secondary">
+                Tutto Tasse
+              </Typography>
             </Link>
           </NextLink>
           <div className={classes.grow}></div>
@@ -110,11 +112,9 @@ const NavbarMaterial = () => {
                 const { menuTitle, pageURL } = menuItem;
                 return (
                   <NavLinkWrapper
-                    onClick={() => setCurrentURLpath(pageURL)}
                     key={index}
                     pageURL={pageURL}
                     menuTitle={menuTitle}
-                    currentURLpath={currentURLpath}
                   />
                   //   <NextLink href={pageURL} passHref>
                   //     <Link>
