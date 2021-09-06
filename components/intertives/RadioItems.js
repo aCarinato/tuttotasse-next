@@ -9,8 +9,8 @@ const RadioItems = ({ labelRadio, options, onChange }) => {
         </div>
 
         <div onChange={onChange} className="col-40">
-          {options.map((option) => (
-            <RadioItem option={option} />
+          {options.map((option, index) => (
+            <RadioItem key={index} option={option} />
           ))}
         </div>
       </fieldset>

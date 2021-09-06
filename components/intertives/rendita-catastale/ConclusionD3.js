@@ -9,7 +9,7 @@ const ConclusionD3 = () => {
         natura dell’unità immobiliare quali terreni o fabbricati. I vari
         identificativi sono di seguito elencati.
         <br></br>
-        <ul class="ul-paragragraph">
+        <ul className="ul-paragragraph">
           <li>il comune catastale,</li>
           <li>il foglio,</li>
           <li>la particella,</li>
@@ -33,10 +33,11 @@ const ConclusionD3 = () => {
         <br></br>
         <a
           href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/visura-catastale/consultazione-rendite-catastali"
-          class="link-external-paragraph"
+          className="link-external-paragraph"
+          rel="noreferrer"
           target="_blank"
         >
-          Consultazione rendite catastali presso il sito dell'Agenzia delle
+          Consultazione rendite catastali presso il sito dell Agenzia delle
           entrate
         </a>
       </p>
