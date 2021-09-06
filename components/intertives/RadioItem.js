@@ -1,4 +1,5 @@
-const RadioItem = ({ option }) => {
+const RadioItem = ({ option, id }) => {
+  const key = { id };
   return (
     <label className="radio-container">
       {option}

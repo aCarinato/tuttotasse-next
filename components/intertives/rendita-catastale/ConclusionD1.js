@@ -6,7 +6,7 @@ const ConclusionD1 = () => {
         proprio codice fiscale, nonché dovranno essere noti i seguenti dati del
         proprietario dell’immobile:
       </p>
-      <ul class="ul-paragragraph">
+      <ul className="ul-paragragraph">
         <li>Nome e cognome</li>
         <li>Data e luogo di nascita</li>
       </ul>
@@ -21,7 +21,8 @@ const ConclusionD1 = () => {
         <a
           href="https://sister.agenziaentrate.gov.it/CitizenIspezioni/visCondizioniUtilizzo.jsp"
           target="_blank"
-          class="link-external-paragraph"
+          rel="noreferrer"
+          className="link-external-paragraph"
         >
           Link agenzia delle entrate
         </a>

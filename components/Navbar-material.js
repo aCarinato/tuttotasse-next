@@ -10,6 +10,7 @@ import {
   MenuItem,
 } from '@material-ui/core';
 import NavLinkWrapper from './NavLinkWrapper';
+import MenuItemWrapper from './MenuItemWrapper';
 import MenuIcon from '@material-ui/icons/Menu';
 import useStyles from '../utils/styles';
 import NextLink from 'next/link';
@@ -45,16 +46,10 @@ const NavbarMaterial = () => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleMenuClick = (pageURL) => {
-    router.push(pageURL);
-    setAnchorEl(null);
-  };
-
-  //   const showCurretURL = (currentPath) => {
-  //     console.log('current path is: ' + currentPath);
+  //   const handleMenuClick = (pageURL) => {
+  //     router.push(pageURL);
+  //     setAnchorEl(null);
   //   };
-
-  //   showCurretURL(currentPath);
 
   const classes = useStyles();
 
@@ -96,12 +91,13 @@ const NavbarMaterial = () => {
                 open={open}
                 onClose={() => setAnchorEl(null)}
               >
-                {menuItems.map((menuItem) => {
+                {menuItems.map((menuItem, index) => {
                   const { menuTitle, pageURL } = menuItem;
                   return (
-                    <MenuItem onClick={() => handleMenuClick(pageURL)}>
-                      {menuTitle}
-                    </MenuItem>
+                    <MenuItemWrapper key={index} menuTitle={menuTitle} />
+                    // <MenuItem onClick={() => handleMenuClick(pageURL)}>
+                    //   {menuTitle}
+                    // </MenuItem>
                   );
                 })}
               </Menu>

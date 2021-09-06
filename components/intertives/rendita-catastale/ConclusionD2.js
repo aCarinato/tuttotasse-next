@@ -7,7 +7,7 @@ const ConclusionD2 = () => {
         disposizione il proprio codice fiscale e i seguenti dati dell’immobile
         di interesse:
       </p>
-      <ul class="ul-paragragraph">
+      <ul className="ul-paragragraph">
         <li>comune</li>
         <li>n. civico</li>
         <li>
