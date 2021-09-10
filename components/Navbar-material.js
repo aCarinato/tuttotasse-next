@@ -94,7 +94,7 @@ const NavbarMaterial = () => {
                 {menuItems.map((menuItem, index) => {
                   const { menuTitle, pageURL } = menuItem;
                   return (
-                    <MenuItemWrapper key={index} menuTitle={menuTitle} />
+                    <MenuItemWrapper key={index} menuTitle={menuTitle} pageURL={pageURL} />
                     // <MenuItem onClick={() => handleMenuClick(pageURL)}>
                     //   {menuTitle}
                     // </MenuItem>
