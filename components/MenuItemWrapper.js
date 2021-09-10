@@ -4,11 +4,13 @@ import { MenuItem } from '@material-ui/core';
 
 const MenuItemWrapper = ({ id, menuTitle, pageURL }) => {
   const key = { id };
-  return <MenuItem>
-  <NextLink href={pageURL} passHref>
-    <Link>{menuTitle}</Link>
-    </NextLink>
-  </MenuItem>;
+  return (
+    <MenuItem>
+      <NextLink href={pageURL} passHref>
+        <Link>{menuTitle}</Link>
+      </NextLink>
+    </MenuItem>
+  );
 };
 
 export default MenuItemWrapper;
