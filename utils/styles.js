@@ -26,8 +26,13 @@ const useStyles = makeStyles((theme) => ({
   },
   //   MAIN
   main: {
-    minHeight: '80vh',
+    minHeight: '100vh',
     // background: '#f2f2f2',
+  },
+  myRadio: {
+    fontFamily: 'Lobster',
+    // fontWeight: '100',
+    // background: 'red',
   },
 }));
 

@@ -7,7 +7,6 @@ import {
   useTheme,
   IconButton,
   Menu,
-  MenuItem,
 } from '@material-ui/core';
 import NavLinkWrapper from './NavLinkWrapper';
 import MenuItemWrapper from './MenuItemWrapper';
@@ -45,11 +44,6 @@ const NavbarMaterial = () => {
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
   };
-
-  //   const handleMenuClick = (pageURL) => {
-  //     router.push(pageURL);
-  //     setAnchorEl(null);
-  //   };
 
   const classes = useStyles();
 
@@ -94,10 +88,7 @@ const NavbarMaterial = () => {
                 {menuItems.map((menuItem, index) => {
                   const { menuTitle, pageURL } = menuItem;
                   return (
-                    <MenuItemWrapper key={index} menuTitle={menuTitle} />
-                    // <MenuItem onClick={() => handleMenuClick(pageURL)}>
-                    //   {menuTitle}
-                    // </MenuItem>
+                    <MenuItemWrapper key={index} menuTitle={menuTitle} pageURL={pageURL} />
                   );
                 })}
               </Menu>
@@ -112,13 +103,6 @@ const NavbarMaterial = () => {
                     pageURL={pageURL}
                     menuTitle={menuTitle}
                   />
-                  //   <NextLink href={pageURL} passHref>
-                  //     <Link>
-                  //       <Typography className={classes.navlink}>
-                  //         {menuTitle}
-                  //       </Typography>
-                  //     </Link>
-                  //   </NextLink>
                 );
               })}
             </div>

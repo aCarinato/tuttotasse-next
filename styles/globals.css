@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,400;1,100;1,800&display=swap');
 
 :root {
   /* Global CSS variables */
@@ -6,17 +7,17 @@
   --clr-primary-header: #222c2a;
   --clr-primary-body: #f2f2f2;
   --clr-secondary-body: #ccc;
-  --clr-secondary-body-400: #2196F3;
+  --clr-secondary-body-400: #2196f3;
 
   --clr-text: white;
 
-  --clr-button: #04AA6D;
+  --clr-button: #04aa6d;
 
   /* Hover effects */
   --clr-title-hover: #222c2a;
   --clr-button-hover: #45a049;
   --clr-link-hover-light-bg: #480ca8;
-  --clr-link-hover-dark-bg: #2196F3;  /* dark background
+  --clr-link-hover-dark-bg: #2196f3; /* dark background
 
   --clr-errors: red;
 
@@ -31,12 +32,12 @@
 
 html,
 body {
-  text-align: center;
+  /* text-align: center; */
   background-color: #c8cabb;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 }
 
 a {
@@ -59,7 +60,6 @@ fieldset {
 /* ------------------- */
 /*    GENERAL PAGES    */
 /* ------------------- */
-
 
 /* ------------------ */
 /*    END OF PAGES    */
@@ -132,7 +132,7 @@ fieldset {
 } */
 
 /* @media (max-width: 540px) { */
-  /* .toggle-button {
+/* .toggle-button {
     display: flex;
   }
 
@@ -150,7 +150,7 @@ fieldset {
     text-align: center;
   } */
 
-  /* .navbar-links li a {
+/* .navbar-links li a {
     padding: .5rem 1rem;
   }
 
@@ -170,13 +170,13 @@ fieldset {
   .brand-title {
     font-size: 1.75rem;
     /* margin: 0 .5rem; */
-  /* } */
-  
-  /* .brand-slogan { */
-    /* font-size: .85rem; */
-    /* margin: 0 .5rem; */
-  /* } */ 
-  
+/* } */
+
+/* .brand-slogan { */
+/* font-size: .85rem; */
+/* margin: 0 .5rem; */
+/* } */
+
 /* } */
 
 /* ------------------ */
@@ -187,29 +187,28 @@ fieldset {
 /*    FORMS     */
 /* ------------ */
 
-.container {
+/* .container {
   width: 30%;
   margin: 1rem auto;
   border-radius: 0.25rem;
   background-color: var(--clr-primary-body);
   padding: 1rem 1rem 1rem 1rem;
   font-size: 1rem;
-}
+} */
 
-.col-60 {
+/* .col-60 {
   vertical-align: top;
   text-align: left;
   width: 60%;
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   display: inline-block;
   padding-top: 0.75rem;
-}
+} */
 
-.col-40 {
-  /* float: left; */
+/* .col-40 {
   text-align: left;
   width: 39%;
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   display: inline-block;
   border: none;
   border-radius: 5px;
@@ -220,12 +219,11 @@ fieldset {
   width: 95%;
   border-top: 1px solid #999;
   padding: 1rem 0;
-}
+} */
 
 /* ------------ */
 /*    FORMS     */
 /* ------------ */
-
 
 /* ------------------------- */
 /* PERSONALISED RADIO-BUTTON */
@@ -254,7 +252,7 @@ fieldset {
 
 .checkmark {
   position: absolute;
-  top: .75rem;
+  top: 0.75rem;
   left: 0;
   height: 1rem;
   width: 1rem;
@@ -265,13 +263,13 @@ fieldset {
 
 /* On mouse-over, add a grey background color */
 
-.radio-container:hover input~.checkmark {
+.radio-container:hover input ~ .checkmark {
   background-color: var(--clr-secondary-body);
 }
 
 /* When the radio button is checked, add a blue background */
 
-.radio-container input:checked~.checkmark {
+.radio-container input:checked ~ .checkmark {
   background-color: var(--clr-secondary-body-400);
 }
 
