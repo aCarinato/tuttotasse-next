@@ -5,6 +5,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import useStyles from '../../../utils/styles';
 import { Grid, Typography, Card, CardContent } from '@material-ui/core';
+import StyledRadio from '../../styled-elements/StyledRadio';
 
 const RadioProprieta = ({ value, onRadioChange }) => {
   const classes = useStyles();
@@ -24,12 +25,12 @@ const RadioProprieta = ({ value, onRadioChange }) => {
             >
               <FormControlLabel
                 value="Immobile di Proprietá"
-                control={<Radio />}
+                control={<StyledRadio />}
                 label="Immobile di Proprietá"
               />
               <FormControlLabel
                 value="Immobile Non di Proprietá"
-                control={<Radio />}
+                control={<StyledRadio />}
                 label="Immobile Non di Proprietá"
               />
             </RadioGroup>

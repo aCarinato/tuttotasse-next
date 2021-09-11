@@ -4,6 +4,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import { Grid, Typography, Card, CardContent } from '@material-ui/core';
+import StyledRadio from '../../styled-elements/StyledRadio';
 
 const RadioFisconline = ({ value, onRadioChange }) => {
   return (
@@ -20,8 +21,16 @@ const RadioFisconline = ({ value, onRadioChange }) => {
               value={value}
               onChange={(e) => onRadioChange(e)}
             >
-              <FormControlLabel value="Si" control={<Radio />} label="Si" />
-              <FormControlLabel value="No" control={<Radio />} label="No" />
+              <FormControlLabel
+                value="Si"
+                control={<StyledRadio />}
+                label="Si"
+              />
+              <FormControlLabel
+                value="No"
+                control={<StyledRadio />}
+                label="No"
+              />
             </RadioGroup>
           </FormControl>
         </CardContent>
