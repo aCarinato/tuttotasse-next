@@ -6,6 +6,10 @@ const ConclusionD1 = () => {
       <Card>
         <CardContent>
           <Typography>
+            <h4>
+              SOMMARIO - Rendita Catastale per immobile di proprietá senza
+              utilizzo di servizi identitá elettronica (SPID/CIE/CNS/etc.):
+            </h4>
             <p>
               Per effettuare una visura per soggetto si dovrà avere a
               disposizione il proprio codice fiscale, nonché dovranno essere

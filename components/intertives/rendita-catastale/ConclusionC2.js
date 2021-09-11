@@ -6,6 +6,10 @@ const ConclusionC2 = () => {
       <Card>
         <CardContent>
           <Typography>
+            <h4>
+              SOMMARIO - Rendita Catastale per immobile non di proprietá di cui
+              si conoscono i dati del proprietario:
+            </h4>
             <p>
               Per effettuare una visura per soggetto si dovrà avere a
               disposizione il proprio codice fiscale, nonché dovranno essere
