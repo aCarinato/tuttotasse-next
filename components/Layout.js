@@ -1,5 +1,4 @@
 import { Container, ThemeProvider } from '@material-ui/core';
-import Navbar from './Navbar';
 import NavbarMaterial from './Navbar-material';
 import useStyles from '../utils/styles';
 import { createTheme } from '@material-ui/core';
@@ -15,14 +14,14 @@ const Layout = ({ children }) => {
       },
     },
     typography: {
-      fontFamily: 'Lobster',
+      // fontFamily: 'Lobster',
+      fontFamily: ['Arial', 'Azeret Mono', 'Roboto', 'Lobster'].join(','),
     },
   });
   const classes = useStyles();
   return (
     <>
       <ThemeProvider theme={theme}>
-        {/* <Navbar /> */}
         <NavbarMaterial />
         <Container className={classes.main}>{children}</Container>
       </ThemeProvider>

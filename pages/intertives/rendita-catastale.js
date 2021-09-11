@@ -9,6 +9,8 @@ import ConclusionD3 from '../../components/intertives/rendita-catastale/Conclusi
 import RadioProprieta from '../../components/intertives/rendita-catastale/RadioProprieta';
 import RadioFisconline from '../../components/intertives/rendita-catastale/RadioFisconline';
 import RadioInfoDisponibili from '../../components/intertives/rendita-catastale/RadioInfoDisponibili';
+import { Grid, Typography } from '@material-ui/core';
+import Container from '@material-ui/core/Container';
 // import RadioItems from '../../components/intertives/RadioItems';
 // import Head from 'next/head';
 
@@ -36,14 +38,16 @@ const RenditaCatastaleUI = () => {
   };
 
   return (
-    <>
-      <h1>Rendita material ui</h1>
-      <div className="container-paragraph">
-        <h2 id="intertive">
-          <a className="link-h2" href="#intertive">
+    <Container>
+      <Typography>
+        <h1>Rendita Catastale</h1>
+        <h2>
+          <a href="#intertive">
             Guida interattiva per conoscere la rendita catastale
           </a>
         </h2>
+      </Typography>
+      <Grid container>
         <RadioProprieta value={selectionA} onRadioChange={handleSelectionA} />
 
         {selectionA === 'Immobile di Proprietá' && (
@@ -92,8 +96,8 @@ const RenditaCatastaleUI = () => {
           'Identificativi catastali (foglio, particella, subalterno)' && (
           <ConclusionD3 />
         )}
-      </div>
-    </>
+      </Grid>
+    </Container>
   );
 };
 
