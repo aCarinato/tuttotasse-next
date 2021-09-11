@@ -6,6 +6,10 @@ const ConclusionC3 = () => {
       <Card>
         <CardContent>
           <Typography>
+            <h4>
+              SOMMARIO - Rendita Catastale per immobile non di proprietá di cui
+              si é a conoscenza dell&apos;indirizzo:
+            </h4>
             <p>
               New caso in cui non si fosse a conoscenza del proprietario
               dell’immobile si può effettuare una ricerca per indirizzo. Per

@@ -6,6 +6,10 @@ const ConclusionC4 = () => {
       <Card>
         <CardContent>
           <Typography>
+            <h4>
+              SOMMARIO - Rendita Catastale per immobile (di proprietá o meno)
+              del quale si conoscano gli identificativi catastali:
+            </h4>
             <p>
               Gli identificativi catastali sono dei parametri che permettono di
               individuare in modo univoco un terreno o una unitá immobiliare.

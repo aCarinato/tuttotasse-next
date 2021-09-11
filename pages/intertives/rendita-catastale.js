@@ -5,7 +5,7 @@ import ConclusionC3 from '../../components/intertives/rendita-catastale/Conclusi
 import ConclusionC4 from '../../components/intertives/rendita-catastale/ConclusionC4';
 import ConclusionD1 from '../../components/intertives/rendita-catastale/ConclusionD1';
 import ConclusionD2 from '../../components/intertives/rendita-catastale/ConclusionD2';
-import ConclusionD3 from '../../components/intertives/rendita-catastale/ConclusionD3';
+// import ConclusionD3 from '../../components/intertives/rendita-catastale/ConclusionD3';
 import RadioProprieta from '../../components/intertives/rendita-catastale/RadioProprieta';
 import RadioFisconline from '../../components/intertives/rendita-catastale/RadioFisconline';
 import RadioInfoDisponibili from '../../components/intertives/rendita-catastale/RadioInfoDisponibili';
@@ -94,7 +94,7 @@ const RenditaCatastaleUI = () => {
 
         {selectionC ===
           'Identificativi catastali (foglio, particella, subalterno)' && (
-          <ConclusionD3 />
+          <ConclusionC4 />
         )}
       </Grid>
     </Container>

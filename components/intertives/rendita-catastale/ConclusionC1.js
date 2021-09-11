@@ -6,6 +6,11 @@ const ConclusionC1 = () => {
       <Card>
         <CardContent>
           <Typography>
+            <h4>
+              SOMMARIO - Rendita Catastale per immobile di proprietá con accesso
+              a servizi di identitá online Entratel - Fisconline
+              (SPID/CIE/CNS/Credenziali)):
+            </h4>
             <p>
               Il valore della rendita catastale di un
               <span>immobile di proprietá</span> si puó ricavare gratuitamente

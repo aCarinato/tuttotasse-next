@@ -6,6 +6,11 @@ const ConclusionD2 = () => {
       <Card>
         <CardContent>
           <Typography>
+            <h4>
+              SOMMARIO - Rendita Catastale per immobile di proprietá (di cui si
+              conosce l&apos;indirizzo) senza utilizzo di servizi identitá
+              elettronica (SPID/CIE/CNS/etc.):
+            </h4>
             <p>
               New caso in cui non si fosse a conoscenza del proprietario
               dell’immobile si può effettuare una ricerca per indirizzo. Per
